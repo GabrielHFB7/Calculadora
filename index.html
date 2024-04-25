@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <div class="calculadora">
+        <input type="text" id="visor" readonly>
+
+        <div id="botoes">
+            <table>
+                <tr>
+                    <td><button onclick="limparVisor()">C</button></td>
+                    <td><button onclick="apagarUltimoCaractere()">⌫</button></td>
+                    <td><button onclick="eventoclique(event)">0</button></td>
+                    <td><button class="operacoes" onclick="eventoclique(event)">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="eventoclique(event)">1</button></td>
+                    <td><button onclick="eventoclique(event)">2</button></td>
+                    <td><button onclick="eventoclique(event)">3</button></td>
+                    <td><button class="operacoes" onclick="eventoclique(event)">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="eventoclique(event)">4</button></td>
+                    <td><button onclick="eventoclique(event)">5</button></td>
+                    <td><button onclick="eventoclique(event)">6</button></td>
+                    <td><button class="operacoes" onclick="eventoclique(event)">-</button></td>
+                </tr>
+                    <td><button onclick="eventoclique(event)">7</button></td>
+                    <td><button onclick="eventoclique(event)">8</button></td>
+                    <td><button onclick="eventoclique(event)">9</button></td>
+                    <td><button class="operacoes" onclick="eventoclique(event)">+</button></td>
+                <tr>
+                    <td><button onclick="eventoclique(event)">&lpar;</button></td>
+                    <td><button onclick="eventoclique(event)">&rpar;</button></td>
+                    <td><button onclick="eventoclique(event)">.</button></td>
+                    <td><button onclick="calcular()">=</button></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
